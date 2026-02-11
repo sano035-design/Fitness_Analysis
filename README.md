@@ -38,7 +38,7 @@ To ensure data consistency before merging (Appending), the following **M-Code** 
 ![Fitness Dashboard Preview](fitness_analysis.jpg)
 
 
--- Korean version-
+-- Korean version --
 
 
 # 📊 Personal Fitness Activity Analysis (Bill, Ben, Bob)
@@ -80,5 +80,4 @@ To ensure data consistency before merging (Appending), the following **M-Code** 
 
 ## 📊 Dashboard Preview
 
-* **Table Visual**: 이름별 종목 및 주차별 운동 시간 합계 표시 (fitness_analysis.jpg)
-* 
+* ![Fitness Dashboard Preview](fitness_analysis.jpg)
