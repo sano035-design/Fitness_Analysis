@@ -4,16 +4,16 @@ This project demonstrates the process of standardizing and merging three dispara
 
 ## 📁 Repository Structure
 
-* **data/**: Contains raw exercise logs for Bill, Ben, and Bob.
-* **powerbi/**: Includes the final `Fitness_Analysis.pbix` file.
+* 3 raw exercise logs for Bill, Ben, and Bob.
+* the final `Fitness_Analysis.pbix` file.
 * **README.md**: Documentation of the data transformation and insights.
+
 
 ## 🛠️ Data Transformation (Power Query)
 
 To ensure data consistency before merging (Appending), the following **M-Code** transformations were applied:
 
-1. **Text Extraction**: Used `Text.BetweenDelimiters` to extract specific activity names (e.g., "cycling") from sentence-based logs[cite: 1, 4].
-2. **Normalization**: Converted all activity names to **lowercase** to prevent duplication during merging[cite: 1, 4].
+1. **Normalization**: Converted all activity names to **lowercase** to prevent duplication during merging[cite: 1, 4].
 3. **Unpivoting (Wide to Long)**: Transformed columns into multiple rows, splitting them into 'Attribute' (Week) and 'Value' (Hours)[cite: 5, 6].
     > *Logic:* `Table.UnpivotOtherColumns(Source, {"Column1"}, "Attribute", "Value")`
 4. **Pivoting (Long to Wide)**: For the final analysis format, 'Weeks' were set as columns and 'Activities' as rows[cite: 7, 8, 12].
